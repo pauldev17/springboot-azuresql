@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azuresqlsrv02.database.windows.net:1433;database=azuresqldb01;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: dbadmin01
+    password: Superpass123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
